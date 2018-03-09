@@ -1,0 +1,27 @@
+.header {
+    height: 50px;
+    margin-bottom: 4px;
+    background-color: blue
+}
+.nav {
+    height: 50px;
+    margin-bottom: 4px;
+    background-color: aqua;
+}
+.content {
+    height: 100px;
+    width: 60%;
+    background-color: blueviolet;
+    display: inline-block;
+}
+.sidebar {
+    height: 100px;
+    width: 39%;
+    background-color: brown;
+    display: inline-block;
+}
+.footer {
+    height: 50px;
+    margin-top: -4px;
+    background-color: chartreuse;
+}
