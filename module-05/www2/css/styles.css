@@ -1,0 +1,80 @@
+@import "variables.css";
+.wrapper {
+    width: 400px;
+    height: 400px;
+    background-color: var(--wrapper);
+    position: relative;
+    
+}
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--box1);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--box2);
+    position: absolute;
+    left: 150px;
+    top: 0;
+}
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--box3);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--box4);
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+.box5 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--box5);
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+.box6 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--box6);
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+.box7 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--box7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.box8 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--box8);
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+}
+.box9 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--box9);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

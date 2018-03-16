@@ -1,0 +1,226 @@
+@import "variables.css";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.container {
+    max-width: 1140px;
+    margin:auto;
+    padding: 0 15px;
+}
+.wrapper-header {
+    background-image: url(../img/Mount.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+.wrapper-top {
+    background-color: rgba(255,255,255,0.25);
+    
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+.nav {
+    flex-basis: 510px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 29px;
+    color: #95a5ad;
+}
+.menu-link {
+    text-transform: uppercase;
+    color: #a3b3bb;
+    font-family: var(--sans);
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+.menu-link:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #36aeea;
+}
+.call {
+    font-family: var(--raleway);
+    font-weight: 700;
+    color: #36aeea;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px 44px;
+    border: 3px solid #36aeea;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: 1s;
+}
+.call:hover {
+    background-color: #36aeea;
+    color: #ffffff;
+}
+.info {
+    padding: 170px 0 190px 40px;
+}
+.info-title {
+    font-family: var(--sans);
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.info-span {
+    font-family: 'Euphoria Script', cursive;
+    color: #36aeea;
+    display: block;
+    margin-top: -25px;
+}
+.info-text {
+    font-family: var(--sans);
+    font-size: 18px;
+    color: #d5dadd;
+    max-width: 440px;
+    margin-bottom: 30px;
+}
+.info-btn {
+    font-family: var(--raleway);
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    /* later-spacing: 2px; */
+    padding: 20px 70px;
+    border: 1px;
+    border-radius: 3px;
+    background-color: #36aeea;
+    transition: 1s;
+}
+/* About us styles */
+.wrapper {
+    background-color: #f6f4f4;
+}
+.about {
+    position: relative;
+    padding: 255px 0 230px 0;
+}
+.about-title {
+    font-family: var(--sans);
+    font-size: 20px;
+    color: #393b44;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.text {
+    font-family: var(--sans);
+    font-size: 14px;
+    color: #949494;
+}
+.about-text {
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+.about-btn {
+    padding: 15px 25px;
+    font-size: 12px;
+}
+.about-pict1 {
+    width: 810px;
+    height: 570px;
+    display: block;
+    position: absolute;
+    top: -35px;
+    right: -10.5%;
+}
+.about-pict2 {
+    width: 350px;
+    height: 350px;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 34%;
+}
+/* journal style */
+.wrapper-journal {
+    background-color: #ffffff;
+}
+.journal {
+    padding: 110px 0 90px 0;
+    counter-reset: journal-counter;
+}
+.title {
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--sans);
+    color: #2c2e37;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+.journal-article-caption {
+    font-size: 11px;
+    font-family: var(--sans);
+    color: #16b5ef;
+    text-align: center;
+    text-transform: uppercase;
+}
+.journal-body {
+    display: flex;
+}
+.journal-article {
+    flex-basis: 33.333%;
+    counter-increment: journal-counter;
+}
+.journal-img {
+    width: 370px;
+    height: 370px;
+}
+.journal-article-title {
+    font-size: 16px;
+    font-family: var(--sans);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0 30px;
+}
+.article-content {
+    padding: 50px 30px 30px;
+}
+.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.article-content > .text::after {
+    content: "0"counter(journal-counter);
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+.icon-container {
+    position: relative;
+}
+.fab, .fas, .fa-gratipay, .fa-envira, .fa-tint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    color: #ffffff;
+}
+/* work style */
+.wrapper-work {
+    background-color: #ffffff;
+}
+.work {
+    padding: 110px 0 90px 0;
+}

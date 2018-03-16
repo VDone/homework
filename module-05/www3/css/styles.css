@@ -1,0 +1,52 @@
+@import "variables.css";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1000px;
+    height: 1000px;
+    background-color: var(--wrapper);
+    margin: auto;
+}
+.menu {
+    padding: 50px;
+    background-color: var(--menu);
+    list-style: none;
+    text-align: center;
+}
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: var(--menu-item);
+    position: relative;
+}
+.menu-item > a {
+    display: inline-block;
+    text-decoration: none;
+}
+.submenu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+}
+.submenu-item {
+    list-style: none;
+    width: 250px;
+    padding: 20px;
+    background-color: var(--submenu-item);
+    font-size: 30px;
+}
+.submenu-item > a {
+    display: inline-block;
+    text-decoration: none;
+}
+.menu-item:hover > .submenu {
+    display: block;
+  }

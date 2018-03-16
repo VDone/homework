@@ -1,0 +1,10 @@
+:root {
+    /*Створення змінних*/
+    --sans: 'Open Sans', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+    --box3: #dba36a;
+    --box4: #65afff;
+    --test: 20px;
+    --title: 100px;
+    /* background-color: var(--box1); Використання змінних */
+}

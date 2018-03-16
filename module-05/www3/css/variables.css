@@ -1,0 +1,16 @@
+:root {
+    /*Створення змінних*/
+    --wrapper: #199586;
+    --menu: #2ea2f3;
+    --menu-item: #424242;
+    --submenu: #e62365;
+    --submenu-item: #9b12ae;
+    --box5: #f1483d;
+    --box6: #f1483d;
+    --box7: #4db051;
+    --box8: #fcef41;
+    --box9: #398ef2;
+    --test: 20px;
+    --title: 100px;
+    /* background-color: var(--box1); Використання змінних */
+}
