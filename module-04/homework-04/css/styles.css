@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 .clearfix:after {
     content: "";
@@ -15,9 +16,6 @@
     padding: 40px 0 80px 0;
 }
   /* header style */
-.header {
-    vertical-align: middle;
-}
 .logo {
     text-transform: uppercase;
     color: #605e5e;
@@ -29,15 +27,15 @@
 .logo::first-letter {
     color: #1abc9c;
 }
-ul {
-    list-style: none;
+.nav {
     float: right;
-}
-.nav-list {
-    vertical-align: center;
 }
 .nav-item {
     float: left;
+    margin-right: 20px;
+}
+.nav-item:last-child {
+    margin-right: 0;
 }
 .nav-link {
     text-transform: uppercase;
@@ -46,32 +44,30 @@ ul {
     font-weight: 700;
     text-decoration: none;
     display: block;
-    padding: 20px;
 }
 .nav-item:hover > .nav-link {
     color: #1abc9c;
 }
 /* section 1 style */
-h2 {
+.main {
+    margin-top: 100px;
+}
+.title {
     color: #515151;
     font-size: 48px;
     text-transform: uppercase;
+    text-align: center;
 }
-h2::after {
+.title::after {
     display: block;
     margin: 20px auto 0;
     content: "";
     background-color: #1abc9c;
     width: 164px;
     height: 7px;
-  }
-.products {
-    margin-top: 100px;
-    text-align: center;
 }
 .product-article {
     width: 255px;
-    height: 322px;
     float: left;
     background-color: #e9f0fd;
     margin-right: 30px;
@@ -80,6 +76,9 @@ h2::after {
 }
 .product-article:nth-child(4n+4) {
     margin-right: 0;
+}
+.product-article:nth-child(1n+4) {
+    margin-bottom: 0;
 }
 .product-catalog {
     margin-top: 90px;
@@ -120,7 +119,6 @@ h2::after {
 /* section 2 styles */
 .news {
     margin-top: 100px;
-    text-align: center;
 }
 .news-img {
     display: block;
@@ -135,12 +133,12 @@ h2::after {
 .news-items:last-child {
     margin-right: 0;
 }
-h3 {
+.news-title {
     font-size: 18px;
     text-align: left;
     margin-top: 20px;
 }
-h3::after {
+.news-title::after {
     display: block;
     margin: 15px 0 0 0;
     content: "";
@@ -151,7 +149,7 @@ h3::after {
 .news-all {
     margin-top: 80px;
 }
-p {
+.news-text {
     text-align: left;
     margin-top: 30px;
 }
