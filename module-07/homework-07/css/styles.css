@@ -100,6 +100,7 @@
     background-image: url(../img/map-fon.png);
     background-repeat: no-repeat;
     background-position: top right;
+    background-size: contain;
 }
 .container-contacts {
     max-width: 940px;
@@ -129,9 +130,9 @@
    flex-direction: column;
    justify-content: space-between;
    flex-wrap: wrap;
-   align-items: stretch;
+   /* align-items: stretch; */
    align-content: space-between;
-   max-height: 320px;
+   max-height: 280px;
 }
 .name-field, .email-field, .subject-field {
     min-width: 450px;
@@ -144,9 +145,6 @@
     padding-left: 10px;
     text-transform: uppercase;
 }
-.subject-field {
-    margin-bottom: 0;
-}
 .message-field {
     min-width: 450px;
     min-height: 210px;
@@ -157,7 +155,6 @@
     color: #acacac;
     padding-left: 10px;
     text-transform: uppercase;
-    vertical-align: top;
 }
 .send-message-btn {
     position: absolute;
