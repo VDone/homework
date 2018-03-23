@@ -1,0 +1,205 @@
+@import "variables.css";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.wrapper-top {
+    /* background-color: #777777; */
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/top-fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 1.375rem 0 8.625rem;
+}
+.container {
+    min-width: 20rem;
+    max-width: 58.75rem;
+    margin: auto;
+}
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.logo {
+    display: block;
+    font-family: var(--mon);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
+.btn-top {
+    font-family: var(--mon);
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0 solid #ffffff;
+    border-radius: 6.25rem;
+    padding: 0.75rem 1.125rem;
+    background-color: transparent;
+}
+.btn-top:hover {
+    border: 2px solid #ffffff;
+    border-radius: 6.25rem;
+    padding: 0.75rem 1.125rem;
+}
+.buttons {
+    margin-bottom: 10rem;
+}
+.center {
+    text-align: center;;
+}
+.center-title {
+    font-family: var(--mon);
+    font-size: 1.875rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.center-title-span {
+    display: block;
+}
+.center-text {
+    font-family: var(--rob);
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 1.25rem;
+}
+.btn-center {
+    font-family: var(--mon);
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0 solid #ffffff;
+    border-radius: 6.25rem;
+    padding: 1rem 3.125rem;
+    background-color: #ff4e50;
+}
+.wrapper-bottom {
+    background-color: #ffffff;
+    padding: 4.375rem 0 3.625rem;
+    text-align: center;
+}
+.bottom-title {
+    text-align: center;
+    font-family: var(--mon);
+    font-size: 1.375rem;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+img {
+    display: block;
+}
+.person-img {
+    margin-top: 1.25rem;
+    margin-bottom: 1.375rem;
+    border-radius: 100%;
+}
+.person-pictures {
+    position: relative;
+    width: 7.625rem;
+    height: 7.625rem;
+    margin: auto;
+    margin-bottom: 1.375rem;
+}
+.person-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.person-name {
+    font-family: var(--mon);
+    font-size: 0.875rem;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.person-info {
+    font-family: var(--rob);
+    font-size: 0.875rem;
+    color: #858585;
+    font-weight: 400;
+    margin-bottom: 1.875em;
+}
+.btn-bottom {
+    font-family: var(--mon);
+    font-size: 0.875rem;
+    color: #ff4e50;
+    font-weight: bold;
+    border: 2px solid #ff4e50;
+    border-radius: 6.25rem;
+    padding: 1rem 4.5rem;
+    background-color: transparent;
+    margin: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 41.785rem;
+        margin: auto;
+    }
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .buttons {
+        margin-bottom: 0;
+    }
+    .header {
+        margin-bottom: 10rem;
+    }
+    .center-title {
+        font-size: 3.25rem;
+        margin-bottom: 2.5rem;
+    }
+    .center-text {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .btn-center {
+        padding: 1rem 1.375rem;
+        background-color: #ff4e50;
+        margin-bottom: 14.75rem;
+    }
+    .wrapper-bottom {
+        padding: 4.625rem 0 2.5rem;
+        text-align: center;
+    }
+    .bottom-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-basis: 29rem;
+        margin-bottom: 2.5rem;
+    }
+    .person-info {
+        flex-basis: 35%;
+    }
+    .person-info:nth-child(3), .person-info:nth-child(4) {
+        margin-bottom: 0;
+    }
+    .btn-bottom {
+        padding: 1rem 1.75rem;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 58.75rem;
+        margin: auto;
+    }
+    .bottom-container {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .person-info {
+        flex-basis: 12.125rem;
+    }
+}
