@@ -46,7 +46,7 @@
 }
 /* services section style */
 .services {
-    margin-top: 90px;
+    margin: 90px 0 0 0;
     text-align: center;
 }
 .services-title {
@@ -64,7 +64,7 @@
     text-transform: none;
 }
 .services-articles {
-    margin-top: 175px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -72,7 +72,6 @@
 }
 .services-section {
     max-width: 280px;
-    position: relative;
     text-align: center;
 }
 .services-section-title {
@@ -86,14 +85,6 @@
     font-family: var(--rob);
     font-size: 15px;
     color: #999999;
-    margin-bottom: 100px;
-}
-.services-section-icon {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%,-50%);
-    top: -50px;
 }
 .wrapper-contacts {
     background-color: #222222;
@@ -126,18 +117,25 @@
 .send-message {
    margin-top: 75px;
    display: flex;
-   position: relative;
    flex-direction: column;
-   justify-content: space-between;
    flex-wrap: wrap;
-   /* align-items: stretch; */
-   align-content: space-between;
-   max-height: 280px;
+   justify-content: space-between;
+   min-height: 310px;
 }
-.name-field, .email-field, .subject-field {
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 210px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input {
     min-width: 450px;
     min-height: 50px;
-    margin-bottom: 30px;
     font-family: var(--mon);
     font-size: 14px;
     font-weight: bold;
@@ -145,10 +143,9 @@
     padding-left: 10px;
     text-transform: uppercase;
 }
-.message-field {
+.message {
     min-width: 450px;
     min-height: 210px;
-    margin-bottom: 30px;
     font-family: var(--mon);
     font-size: 14px;
     font-weight: bold;
@@ -157,16 +154,11 @@
     text-transform: uppercase;
 }
 .send-message-btn {
-    position: absolute;
-    display: block;
+    align-self: center;
     text-transform: uppercase;
     padding: 25px 50px;
     background-color: #fed136;
     color: #ffffff;
     font-weight: bold;
     border: 1px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%,-50%);
-    top: 270px;
 }
