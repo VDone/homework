@@ -46,8 +46,8 @@
 }
 /* services section style */
 .services {
-    padding: 90px 0 0;
-    text-align: center;
+    margin: 90px 0 100px;
+    
 }
 .services-title {
     font-family: var(--mon);
@@ -55,6 +55,8 @@
     font-size: 30px;
     color: #333333;
     text-transform: uppercase;
+    margin-bottom: 60px;
+    text-align: center;
 }
 .title-span {
     font-family:  var(--kau);
@@ -64,23 +66,36 @@
 }
 .services-title::after {
     display: block;
-    margin: 40px auto 60px;
+    margin: 40px auto 0;
     content: "";
     background-color: #f38181;
     width: 60px;
     height: 4px;
 }
 .services-articles {
-    max-height: 355px;
+    max-height: 390px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: flex-start;
 }
 .services-section {
+    max-width: 325px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.services-section:nth-child(2n+2) {
+    margin-bottom: 0;
+}
+.text-container {
     max-width: 280px;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 .services-section-title {
     text-transform: uppercase;
@@ -88,23 +103,18 @@
     font-size: 14px;
     color: #333333;
     text-align: left;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 }
 .section-text {
     font-family: var(--rob);
     font-size: 15px;
     color: #999999;
-    margin-bottom: 100px;
     text-align: left;
-}
-.services-section-icon {
-    position: absolute;
-    left: -50px;
-    top: 4px;
 }
 /* team section style */
 .team {
     text-align: center;
+    margin-bottom: 85px;
 }
 .team-title {
     font-family: var(--mon);
@@ -112,6 +122,7 @@
     font-size: 30px;
     color: #333333;
     text-transform: uppercase;
+    margin-bottom: 60px;
 }
 .team-title-span {
     font-family:  var(--kau);
@@ -121,7 +132,7 @@
 }
 .team-title::after {
     display: block;
-    margin: 40px auto 60px;
+    margin: 40px auto 0;
     content: "";
     background-color: #f38181;
     width: 60px;
@@ -142,6 +153,9 @@
     flex-wrap: wrap;
     align-items: center;
 }
+.team-photo-item {
+    /* margin-bottom: 85px; */
+}
 .team-item-wrapper {
     background-image: url(../img/back-img.png);
 }
@@ -152,7 +166,22 @@
 }
 .team-item:hover {
     transform: translate(-10px, -10px);
-    opacity: 0.5;
+}
+.socials-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(rgba(243,129,129,0.8),rgba(238,215,135,0.8));
+    opacity: 0;
+    transition: linear 200ms;
+}
+.team-item:hover > .socials-back:hover {
+    opacity: 1;
+}
+.socials-front {
+    position: relative;
 }
 .facebook {
     position: absolute;
@@ -167,10 +196,10 @@
     height: 56px;
     display: none;
 }
-.team-item:hover > .facebook {
+.team-item:hover > .socials-back > .socials-front > .facebook {
     display: block;
 }
-.team-item:hover > .facebook:hover {
+.team-item:hover > .socials-back > .socials-front > .facebook:hover {
     background-color: #f38181;
     background-image: url(../img/facebook-white.png);
     background-repeat: no-repeat;
@@ -189,10 +218,10 @@
     height: 56px;
     display: none;
 }
-.team-item:hover > .twitter {
+.team-item:hover > .socials-back > .socials-front > .twitter {
     display: block;
 }
-.team-item:hover > .twitter:hover {
+.team-item:hover > .socials-back > .socials-front > .twitter:hover {
     background-color: #f38181;
     background-image: url(../img/twitter-white.png);
     background-repeat: no-repeat;
@@ -211,10 +240,10 @@
     height: 56px;
     display: none;
 }
-.team-item:hover > .pinterest {
+.team-item:hover > .socials-back > .socials-front > .pinterest {
     display: block;
 }
-.team-item:hover > .pinterest:hover {
+.team-item:hover > .socials-back > .socials-front > .pinterest:hover {
     background-color: #f38181;
     background-image: url(../img/pinterest-white.png);
     background-repeat: no-repeat;
@@ -232,10 +261,10 @@
     height: 56px;
     display: none;
 }
-.team-item:hover > .instagram {
+.team-item:hover > .socials-back > .socials-front > .instagram {
     display: block;
 }
-.team-item:hover > .instagram:hover {
+.team-item:hover > .socials-back > .socials-front > .instagram:hover {
     background-color: #f38181;
     background-image: url(../img/instagram-white.png);
     background-repeat: no-repeat;
@@ -254,7 +283,6 @@
     font-size: 15px;
     font-style: italic;
     color: #acacac;
-    margin-bottom: 85px;
     text-align: center;
     text-transform: capitalize;
     margin-top: 10px;
